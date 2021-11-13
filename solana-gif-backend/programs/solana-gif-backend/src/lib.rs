@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("GeHAw8bNJPRVqtyDhfQ4UjACTRw8fHjdDBnpMpFZ9sQK");
 
 #[program]
 pub mod solana_gif_backend {
@@ -28,14 +28,14 @@ pub mod solana_gif_backend {
 }
 
 #[derive(Accounts)]
-pub struct StartStuffOff <'info> {
+pub struct StartStuffOff<'info> {
 #[account(init, payer = user, space = 9000)]
 // All we're doing here is telling Solana how we want to initialize BaseAccount
 // init will tell Solana to create a new account owned by our current program.
 // payer = user tells our program who's paying for the account to be created. In this case, it's the user calling the function.
 // We then say space = 9000 which will allocate 9000 bytes of space for our account. You can change this # if you wanted, but, 9000 bytes is enough for the program we'll be building here!
 
-pub base_account: Account <'info, BaseAccount >,
+pub base_account: Account<'info, BaseAccount >,
 #[account( mut)]
 pub user: Signer<'info>,
 pub system_program: Program<'info, System>,

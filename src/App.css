@@ -67,13 +67,17 @@
 
 .footer-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  margin-top: 2rem;
   width: 100%;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 45px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 .twitter-logo {

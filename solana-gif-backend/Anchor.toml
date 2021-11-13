@@ -1,5 +1,5 @@
 [programs.devnet]
-solana_gif_backend = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+solana_gif_backend = "GeHAw8bNJPRVqtyDhfQ4UjACTRw8fHjdDBnpMpFZ9sQK"
 
 [registry]
 url = "https://anchor.projectserum.com"
