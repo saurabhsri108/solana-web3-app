@@ -9,4 +9,5 @@ cluster = "localnet"
 wallet = "/home/saurabhsrivastava/.config/solana/id.json"
 
 [scripts]
-test = "mocha -t 1000000 tests/"
+# test = "mocha -t 1000000 tests/"
+test = "node tests/solana-gif-backend.js"
